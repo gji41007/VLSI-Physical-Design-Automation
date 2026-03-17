@@ -12,9 +12,6 @@ int main(int argc, char* argv[]) {
     std::string defFile = argv[2];
     std::string outputFile = argv[3];
 
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
 
     DetailPlacer DP_Manager(lefFile, defFile, outputFile);
     DP_Manager.run();
